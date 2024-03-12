@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>The Music Library</title>
+</head>
+
+<body>
+    <header>
+        <div>
+            <a href="index.html">
+                <img src="./logo.png" alt="Logo The Music Library">
+            </a>
+        </div>
+        
+        <nav>
+            <ul>
+                <li><a href="index.html">
+                        <button type="button" class="btn btn-sm ">Inicio</button></li>
+                <li><a href="artistas.html">
+                        <button type="button" class="btn btn-sm ">Artistas</button></li>
+                </a>
+
+            </ul>
+        </nav>
+    </header>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+        <div class="container-fluid">
+            <div class="row">
+                <!-- Columna para el texto -->
+                <div class="col-md-6 order-md-1 order-2">
+                    <section class="py-3 text-center">
+                        <div class="row py-lg-6">
+                            <div class="col-md-10 mx-auto">
+                                <h1>¡Hola y bienvenidos a The Music Library, el lugar perfecto para todos los fanáticos de la música!</h1>
+                                <p class="lead text-muted" style="font-size: 16px;">
+                                    Si eres como yo, que nunca te cansas de descubrir nuevos sonidos y artistas, has llegado al
+                                    sitio indicado.
+                                    <br>Aquí, me dedico apasionadamente a explorar el emocionante mundo de la música actual,
+                                    desde los artistas más populares hasta los talentos emergentes que están listos para
+                                    conquistar tus oídos.
+                                    Súmate a mí en este viaje musical lleno de energía y emoción.
+                                    <br> Descubre nuevos artistas que te robarán el corazón, sumérgete en sus álbumes para
+                                    encontrar esa canción que te haga vibrar, y déjate llevar por mis recomendaciones cargadas
+                                    de entusiasmo y amor por la música.
+                                </p>
+                                <div>
+                                    <button id="botonConoceMas" type="button"
+        onclick="window.location.href='artistas.html'"
+        class="btn btn-primary">Conoce más</button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+                <!-- Columna para el carrusel -->
+                <div class="col-md-6 order-md-2 order-1 d-flex justify-content align-items-center contenido">
+                    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0"
+                                class="active" aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="./carrusel/HarryC.png" class="d-block w-100" alt="harry styles">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Harry Styles</h5>
+                                    <p>Un gran cantante que con su talento y carisma se ha ganado el mundo</p>
+                                </div>
+                            </div>
+                           
+                             <!-- Aquí van los otros elementos del carrusel -->
+                             <div class="carousel-item">
+                                <img src="./carrusel/TaylorC.png" class="d-block w-100" alt="Taylor Swift">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Taylor Swift</h5>
+                                    <p>Artista de nuestra generación. La industria musical.</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./carrusel/ConanC.png" class="d-block w-100" alt="Conan Gray">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Conan Gray</h5>
+                                    <p>Un gran cantante que todos deberían conocer</p>
+                                </div>
+                            </div>
+                            <div class="carousel-item">
+                                <img src="./carrusel/LouisC.png" class="d-block w-100" alt="Boygenius">
+                                <div class="carousel-caption d-none d-md-block">
+                                    <h5>Louis Tomlinson</h5>
+                                    <p>Gran cantante y compositor </p>
+                                </div>
+                            </div>
+                        </div>
+                
+                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+                
+                <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+                integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+                crossorigin="anonymous"></script>   
+
+</body>
+
+</html>
